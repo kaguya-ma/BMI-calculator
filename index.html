@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>BMI Calculator</h1>
+      </div>
+      <div class="row">
+        
+          <div class="form-group">
+            <label for="exampleInputEmail1">Height in CM</label>
+            <input required id="height" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="175">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Weight in KG</label>
+            <input required id="weight" class="form-control" id="exampleInputPassword1" placeholder="75">
+          </div>
+          
+          <button onclick="calculateBmi()" class="btn btn-primary">Calculate</button>
+         
+        
+      </div>
+      <div class="mt-2">
+        <h2 id="result">0</h2>
+      </div>
+      <div class="row"><p><strong>BMI Weight Guide</strong></p></div>
+      <div>
+        <p>Under Weight = Less than 18.6</p>
+        <p>Normal Range = 18.6 and 24.9</p>
+        <p>Overweight = Greater than 24.9</p>
+      </div>
+    </div>
+
+  </body>
+</html>
